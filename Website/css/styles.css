@@ -12,10 +12,6 @@
   --border: #e5e5e5;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: "Inter", sans-serif;
   color: var(--dark);
@@ -59,7 +55,7 @@ header {
 }
 
 .logo {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 800;
   color: var(--green);
 }
@@ -100,7 +96,8 @@ header {
   height: 100vh;
   background:
     linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.35)),
-    url("../assets/img/intro.jpg") center/cover no-repeat;
+    url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=2000&auto=format&fit=crop")
+      center/cover no-repeat;
   display: flex;
   align-items: center;
   color: white;
@@ -254,7 +251,8 @@ section {
 .cta {
   background:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../assets/img/intro.jpg") center/cover no-repeat;
+    url("https://images.unsplash.com/photo-1416879595882-3373a0480b5b?q=80&w=1800&auto=format&fit=crop")
+      center/cover;
   color: white;
   text-align: center;
   padding: 120px 20px;

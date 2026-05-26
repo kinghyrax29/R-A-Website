@@ -1,3 +1,5 @@
+// Smooth navbar shadow on scroll
+
 window.addEventListener("scroll", () => {
 
   const header = document.querySelector("header");
