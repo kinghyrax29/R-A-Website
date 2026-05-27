@@ -3,89 +3,234 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Project Gallery | GreenScape Design</title>
 
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Main CSS -->
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
-    <header class="hero">
-      <div class="hero-overlay">
-        <h1>Our Landscape Transformations</h1>
-        <p>Explore completed projects and dramatic before & after results.</p>
+    <!-- NAVBAR -->
+
+    <header>
+      <div class="container navbar">
+        <a href="index.html" class="logo"> GreenScape </a>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+
+        <a href="#" class="btn"> Get Quote </a>
       </div>
     </header>
 
-    <main class="gallery-container">
-      <!-- Standalone Image Card -->
-      <section class="gallery-card">
-        <img src="images/project1.jpg" alt="Luxury backyard landscape" />
-        <div class="card-content">
-          <h3>Modern Backyard Oasis</h3>
-          <p>Custom pavers, lighting, and drought-tolerant planting.</p>
+    <!-- HERO -->
+
+    <section class="gallery-hero">
+      <div class="gallery-hero-content">
+        <h1>Our Project Gallery</h1>
+
+        <p>
+          Explore luxury outdoor transformations, custom landscape designs, and
+          dramatic before & after renovations.
+        </p>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+
+    <section>
+      <div class="container">
+        <div class="section-title">
+          <span> Portfolio </span>
+
+          <h2>Recent Landscape Projects</h2>
+
+          <p>
+            Browse completed patios, outdoor living spaces, retaining walls,
+            front yard renovations, and custom landscape installations.
+          </p>
         </div>
-      </section>
 
-      <!-- Before & After Card -->
-      <section class="gallery-card before-after-card">
-        <div class="before-after-container">
-          <img
-            src="images/before1.jpg"
-            alt="Before landscape renovation"
-            class="before-image"
-          />
+        <div class="gallery-grid">
+          <!-- PROJECT -->
 
-          <div class="after-wrapper">
+          <div class="gallery-card">
             <img
-              src="images/after1.jpg"
-              alt="After landscape renovation"
-              class="after-image"
+              src="images/project1.jpg"
+              alt="Luxury backyard landscape"
+              class="gallery-image"
             />
+
+            <div class="gallery-content">
+              <h3>Modern Backyard Oasis</h3>
+
+              <p>
+                Custom pavers, outdoor lighting, drought-tolerant planting, and
+                luxury entertaining space.
+              </p>
+            </div>
           </div>
 
-          <input type="range" min="0" max="100" value="50" class="slider" />
-        </div>
+          <!-- BEFORE / AFTER -->
 
-        <div class="card-content">
-          <h3>Front Yard Transformation</h3>
-          <p>From dry dirt to a welcoming entry landscape.</p>
-        </div>
-      </section>
+          <div class="gallery-card">
+            <div class="before-after-container">
+              <span class="before-label"> Before </span>
 
-      <!-- Another Standalone Card -->
-      <section class="gallery-card">
-        <img src="images/project2.jpg" alt="Stone patio with pergola" />
-        <div class="card-content">
-          <h3>Outdoor Living Space</h3>
-          <p>Stone patio installation with cedar pergola and fire feature.</p>
-        </div>
-      </section>
+              <span class="after-label"> After </span>
 
-      <!-- Another Before & After -->
-      <section class="gallery-card before-after-card">
-        <div class="before-after-container">
-          <img
-            src="images/before2.jpg"
-            alt="Before retaining wall"
-            class="before-image"
-          />
+              <img
+                src="images/before1.jpg"
+                alt="Before landscape renovation"
+                class="before-image"
+              />
 
-          <div class="after-wrapper">
-            <img
-              src="images/after2.jpg"
-              alt="After retaining wall"
-              class="after-image"
-            />
+              <div class="after-wrapper">
+                <img
+                  src="images/after1.jpg"
+                  alt="After landscape renovation"
+                  class="after-image"
+                />
+              </div>
+
+              <input type="range" min="0" max="100" value="50" class="slider" />
+            </div>
+
+            <div class="gallery-content">
+              <h3>Front Yard Transformation</h3>
+
+              <p>
+                Complete curb appeal redesign featuring fresh sod, planting
+                beds, paver walkway, and irrigation upgrades.
+              </p>
+            </div>
           </div>
 
-          <input type="range" min="0" max="100" value="50" class="slider" />
+          <!-- PROJECT -->
+
+          <div class="gallery-card">
+            <img
+              src="images/project2.jpg"
+              alt="Stone patio with pergola"
+              class="gallery-image"
+            />
+
+            <div class="gallery-content">
+              <h3>Outdoor Living Space</h3>
+
+              <p>
+                Stone patio installation with cedar pergola, ambient lighting,
+                and custom fire feature.
+              </p>
+            </div>
+          </div>
+
+          <!-- BEFORE / AFTER -->
+
+          <div class="gallery-card">
+            <div class="before-after-container">
+              <span class="before-label"> Before </span>
+
+              <span class="after-label"> After </span>
+
+              <img
+                src="images/before2.jpg"
+                alt="Before retaining wall"
+                class="before-image"
+              />
+
+              <div class="after-wrapper">
+                <img
+                  src="images/after2.jpg"
+                  alt="After retaining wall"
+                  class="after-image"
+                />
+              </div>
+
+              <input type="range" min="0" max="100" value="50" class="slider" />
+            </div>
+
+            <div class="gallery-content">
+              <h3>Retaining Wall Upgrade</h3>
+
+              <p>
+                Engineered retaining wall replacement with integrated drainage
+                and decorative planting zones.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+
+    <section class="cta">
+      <div class="container">
+        <h2>Ready to Transform Your Outdoor Space?</h2>
+
+        <p>
+          Let’s design a landscape that adds beauty, function, and long-term
+          value to your property.
+        </p>
+
+        <a href="#" class="btn"> Request a Consultation </a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h4>GreenScape Design</h4>
+
+            <p>
+              Premium landscape design, hardscaping, outdoor living, and
+              property transformations.
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+
+            <p><a href="index.html">Home</a></p>
+            <p><a href="index.html#services">Services</a></p>
+            <p><a href="index.html#about">About</a></p>
+            <p><a href="gallery.html">Gallery</a></p>
+          </div>
+
+          <div class="footer-col">
+            <h4>Contact</h4>
+
+            <p>(555) 123-4567</p>
+            <p>info@greenscape.com</p>
+            <p>Mon - Fri: 8AM - 6PM</p>
+          </div>
         </div>
 
-        <div class="card-content">
-          <h3>Retaining Wall Upgrade</h3>
-          <p>Engineered wall replacement with integrated planting beds.</p>
+        <div class="footer-bottom">
+          <p>© 2026 GreenScape Design. All rights reserved.</p>
         </div>
-      </section>
-    </main>
+      </div>
+    </footer>
+
+    <!-- JS -->
 
     <script src="script.js"></script>
   </body>
