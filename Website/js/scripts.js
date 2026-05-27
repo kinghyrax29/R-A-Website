@@ -11,3 +11,29 @@ window.addEventListener("scroll", () => {
   }
 
 });
+
+
+/* =========================================
+   BEFORE / AFTER GALLERY SLIDER
+========================================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const sliders = document.querySelectorAll(".slider");
+
+  sliders.forEach(slider => {
+
+    slider.addEventListener("input", (e) => {
+
+      const container = e.target.closest(".before-after-container");
+
+      const afterWrapper =
+        container.querySelector(".after-wrapper");
+
+      afterWrapper.style.width = `${slider.value}%`;
+
+    });
+
+  });
+
+});
