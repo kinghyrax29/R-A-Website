@@ -23,15 +23,47 @@ document.addEventListener("DOMContentLoaded", () => {
 
   sliders.forEach(slider => {
 
+    const container = slider.closest(".before-after-container");
+    const beforeWrapper = container.querySelector(".before-wrapper");
+
+    // Handle range input
     slider.addEventListener("input", (e) => {
+      beforeWrapper.style.width = `${slider.value}%`;
+    });
 
-      const container = e.target.closest(".before-after-container");
+    // Handle direct mouse dragging on image
+    function updatePosition(e) {
+      const rect = container.getBoundingClientRect();
+      let x;
 
-      const afterWrapper =
-        container.querySelector(".after-wrapper");
+      if (e.type.startsWith("touch")) {
+        x = e.touches[0].clientX - rect.left;
+      } else {
+        x = e.clientX - rect.left;
+      }
 
-      afterWrapper.style.width = `${slider.value}%`;
+      // Constrain x to container bounds
+      x = Math.max(0, Math.min(x, rect.width));
+      const percentage = (x / rect.width) * 100;
 
+      beforeWrapper.style.width = `${percentage}%`;
+      slider.value = percentage;
+    }
+
+    // Mouse events
+    container.addEventListener("mousedown", () => {
+      document.addEventListener("mousemove", updatePosition);
+      document.addEventListener("mouseup", () => {
+        document.removeEventListener("mousemove", updatePosition);
+      }, { once: true });
+    });
+
+    // Touch events
+    container.addEventListener("touchstart", () => {
+      document.addEventListener("touchmove", updatePosition);
+      document.addEventListener("touchend", () => {
+        document.removeEventListener("touchmove", updatePosition);
+      }, { once: true });
     });
 
   });

@@ -382,7 +382,7 @@ footer {
 /* GALLERY SECTION */
 
 .gallery-grid {
-  columns: 3 320px;
+  columns: 2 500px;
   column-gap: 1.5rem;
   margin-top: 4rem;
 }
@@ -395,7 +395,7 @@ footer {
   break-inside: avoid;
   overflow: hidden;
   border-radius: 26px;
-  background: white;
+  background: rgb(255, 255, 255);
   transition:
     transform 0.45s ease,
     box-shadow 0.45s ease;
@@ -440,7 +440,7 @@ footer {
     transparent
   );
 
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .gallery-content h3 {
@@ -468,11 +468,22 @@ footer {
   object-fit: cover;
 }
 
-.after-wrapper {
+.before-wrapper {
   position: absolute;
   inset: 0;
   width: 50%;
   overflow: hidden;
+  left: 0;
+  right: auto;
+}
+
+.before-label {
+  left: 24px;
+  z-index: 2;
+}
+
+.after-label {
+  right: 24px;
 }
 
 /* SLIDER */
@@ -490,9 +501,9 @@ footer {
 
 .slider::-webkit-slider-thumb {
   appearance: none;
-  width: 5px;
+  width: 0cqmin;
   height: 100vh;
-  background: white;
+  background: rgba(147, 147, 147, 0.5);
   border: none;
   box-shadow:
     0 0 0 2px rgba(255, 255, 255, 0.5),
@@ -500,9 +511,9 @@ footer {
 }
 
 .slider::-moz-range-thumb {
-  width: 5px;
+  width: 3px;
   height: 100vh;
-  background: white;
+  background: rgba(147, 147, 147, 0.5);
   border: none;
 }
 
@@ -512,9 +523,8 @@ footer {
 .after-label {
   position: absolute;
   top: 24px;
-  z-index: 12;
 
-  background: rgba(255, 255, 255, 0.12);
+  background: rgba(80, 80, 80, 0.52);
   backdrop-filter: blur(10px);
 
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -533,6 +543,7 @@ footer {
 
 .before-label {
   left: 24px;
+  z-index: 2;
 }
 
 .after-label {
