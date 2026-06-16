@@ -15,7 +15,7 @@
 body {
   font-family: "Inter", sans-serif;
   color: var(--dark);
-  background: white;
+  background: rgb(255, 255, 255);
   line-height: 1.6;
 }
 
@@ -49,9 +49,10 @@ header {
   top: 0;
   left: 0;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgb(255, 255, 255);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-top: 10px solid rgb(255, 255, 255);
+  border-bottom: 10px solid rgb(255, 255, 255);
 }
 
 .navbar {
@@ -259,11 +260,11 @@ section {
 .cta {
   background:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://images.unsplash.com/photo-1416879595882-3373a0480b5b?q=80&w=1800&auto=format&fit=crop")
+    url(../assets/img/lawn&patio.jpg)
       center/cover;
-  color: white;
+  color: rgb(255, 255, 255);
   text-align: center;
-  padding: 120px 20px;
+  padding: 100px 20px;
 }
 
 .cta h2 {
@@ -272,10 +273,11 @@ section {
 }
 
 .cta p {
-  max-width: 700px;
+  max-width: 730px;
   margin: auto;
   margin-bottom: 2rem;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.937);
+  backdrop-filter: blur(1px);
 }
 
 /* FOOTER */
@@ -283,7 +285,7 @@ section {
 footer {
   background: #111;
   color: white;
-  padding: 60px 0 30px;
+  padding: 50px 0 30px;
 }
 
 .footer-grid {
