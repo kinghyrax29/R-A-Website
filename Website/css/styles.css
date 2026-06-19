@@ -579,12 +579,16 @@ footer {
   height: 620px;
 }
 
-.gallery-card:nth-child(3) img {
-  height: 440px;
+.gallery-card:nth-child(2) img {
+  height: 525px;
 }
 
-.gallery-card:nth-child(5) img {
-  height: 700px;
+.gallery-card:nth-child(3) img {
+  height: 525px;
+}
+
+.gallery-card:nth-child(4) img {
+  height: 620px;
 }
 
 /* SECTION TITLE */
