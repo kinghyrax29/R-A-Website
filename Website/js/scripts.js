@@ -68,4 +68,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
   });
 
+  const navToggle = document.querySelector(".nav-toggle");
+  const header = document.querySelector("header");
+
+  if (navToggle && header) {
+    navToggle.addEventListener("click", () => {
+      const expanded = navToggle.getAttribute("aria-expanded") === "true";
+      navToggle.setAttribute("aria-expanded", String(!expanded));
+      header.classList.toggle("nav-open");
+    });
+
+    document.querySelectorAll(".nav-links a").forEach((link) => {
+      link.addEventListener("click", () => {
+        header.classList.remove("nav-open");
+        navToggle.setAttribute("aria-expanded", "false");
+      });
+    });
+  }
+
 });
